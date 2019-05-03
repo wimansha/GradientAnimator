@@ -13,6 +13,8 @@
 		1204F1DC227B10B200CCB4DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1204F1DB227B10B200CCB4DF /* Assets.xcassets */; };
 		1204F1DF227B10B200CCB4DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1204F1DD227B10B200CCB4DF /* LaunchScreen.storyboard */; };
 		1204F1E2227B10B200CCB4DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1204F1E1227B10B200CCB4DF /* main.m */; };
+		1204F1EC227B2A0200CCB4DF /* GradientAnimatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1204F1EB227B2A0200CCB4DF /* GradientAnimatorView.m */; };
+		1204F1EF227B2B4D00CCB4DF /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1204F1EE227B2B4D00CCB4DF /* UIColor+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		1204F1DE227B10B200CCB4DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1204F1E0227B10B200CCB4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1204F1E1227B10B200CCB4DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1204F1EA227B2A0200CCB4DF /* GradientAnimatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientAnimatorView.h; sourceTree = "<group>"; };
+		1204F1EB227B2A0200CCB4DF /* GradientAnimatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientAnimatorView.m; sourceTree = "<group>"; };
+		1204F1ED227B2B4D00CCB4DF /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		1204F1EE227B2B4D00CCB4DF /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		1204F1D1227B10AF00CCB4DF /* GradientAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				1204F1E8227B29A700CCB4DF /* GradientAnimator */,
+				1204F1E9227B29D300CCB4DF /* Helper */,
 				1204F1D2227B10AF00CCB4DF /* AppDelegate.h */,
 				1204F1D3227B10AF00CCB4DF /* AppDelegate.m */,
 				1204F1D5227B10AF00CCB4DF /* ViewController.h */,
@@ -69,6 +77,24 @@
 				1204F1E1227B10B200CCB4DF /* main.m */,
 			);
 			path = GradientAnimator;
+			sourceTree = "<group>";
+		};
+		1204F1E8227B29A700CCB4DF /* GradientAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				1204F1EA227B2A0200CCB4DF /* GradientAnimatorView.h */,
+				1204F1EB227B2A0200CCB4DF /* GradientAnimatorView.m */,
+			);
+			path = GradientAnimator;
+			sourceTree = "<group>";
+		};
+		1204F1E9227B29D300CCB4DF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1204F1ED227B2B4D00CCB4DF /* UIColor+Additions.h */,
+				1204F1EE227B2B4D00CCB4DF /* UIColor+Additions.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1204F1EF227B2B4D00CCB4DF /* UIColor+Additions.m in Sources */,
 				1204F1D7227B10AF00CCB4DF /* ViewController.m in Sources */,
+				1204F1EC227B2A0200CCB4DF /* GradientAnimatorView.m in Sources */,
 				1204F1E2227B10B200CCB4DF /* main.m in Sources */,
 				1204F1D4227B10AF00CCB4DF /* AppDelegate.m in Sources */,
 			);
