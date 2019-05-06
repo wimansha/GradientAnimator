@@ -32,6 +32,7 @@
 		1204F1EB227B2A0200CCB4DF /* GradientAnimatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientAnimatorView.m; sourceTree = "<group>"; };
 		1204F1ED227B2B4D00CCB4DF /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
 		1204F1EE227B2B4D00CCB4DF /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		12464A46227DFA9600A288D8 /* GradientAnimator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GradientAnimator.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 				1204F1DD227B10B200CCB4DF /* LaunchScreen.storyboard */,
 				1204F1E0227B10B200CCB4DF /* Info.plist */,
 				1204F1E1227B10B200CCB4DF /* main.m */,
+				12464A46227DFA9600A288D8 /* GradientAnimator.podspec */,
 			);
 			path = GradientAnimator;
 			sourceTree = "<group>";
