@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GradientAnimator'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A custom UIView with an ability to animate a linear gradient layer for a given set of colors.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Wimansha Chathuranga' => 'ewimansha@gmail.com' }
-  s.source           = { :git => 'https://github.com/wimansha/GradientAnimator.git, :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/wimansha/GradientAnimator.git, :commit => 'c94438d8c4da508472fb6995278468b69f711430' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
