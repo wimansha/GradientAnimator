@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1203A7C622BF522A004EF47D /* FullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1203A7C522BF522A004EF47D /* FullScreenViewController.m */; };
 		1204F1D4227B10AF00CCB4DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1204F1D3227B10AF00CCB4DF /* AppDelegate.m */; };
 		1204F1D7227B10AF00CCB4DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1204F1D6227B10AF00CCB4DF /* ViewController.m */; };
 		1204F1DA227B10AF00CCB4DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1204F1D8227B10AF00CCB4DF /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1203A7C422BF522A004EF47D /* FullScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullScreenViewController.h; sourceTree = "<group>"; };
+		1203A7C522BF522A004EF47D /* FullScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FullScreenViewController.m; sourceTree = "<group>"; };
 		1204F1CF227B10AF00CCB4DF /* GradientAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradientAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1204F1D2227B10AF00CCB4DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1204F1D3227B10AF00CCB4DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,7 +35,7 @@
 		1204F1EB227B2A0200CCB4DF /* GradientAnimatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientAnimatorView.m; sourceTree = "<group>"; };
 		1204F1ED227B2B4D00CCB4DF /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
 		1204F1EE227B2B4D00CCB4DF /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
-		12464A46227DFA9600A288D8 /* GradientAnimator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GradientAnimator.podspec; sourceTree = "<group>"; };
+		12464A46227DFA9600A288D8 /* GradientAnimatorView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GradientAnimatorView.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1203A7C322BF51C3004EF47D /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				1203A7C422BF522A004EF47D /* FullScreenViewController.h */,
+				1203A7C522BF522A004EF47D /* FullScreenViewController.m */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
 		1204F1C6227B10AF00CCB4DF = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +77,7 @@
 		1204F1D1227B10AF00CCB4DF /* GradientAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				1203A7C322BF51C3004EF47D /* Examples */,
 				1204F1E8227B29A700CCB4DF /* GradientAnimator */,
 				1204F1E9227B29D300CCB4DF /* Helper */,
 				1204F1D2227B10AF00CCB4DF /* AppDelegate.h */,
@@ -76,7 +89,7 @@
 				1204F1DD227B10B200CCB4DF /* LaunchScreen.storyboard */,
 				1204F1E0227B10B200CCB4DF /* Info.plist */,
 				1204F1E1227B10B200CCB4DF /* main.m */,
-				12464A46227DFA9600A288D8 /* GradientAnimator.podspec */,
+				12464A46227DFA9600A288D8 /* GradientAnimatorView.podspec */,
 			);
 			path = GradientAnimator;
 			sourceTree = "<group>";
@@ -174,6 +187,7 @@
 				1204F1EC227B2A0200CCB4DF /* GradientAnimatorView.m in Sources */,
 				1204F1E2227B10B200CCB4DF /* main.m in Sources */,
 				1204F1D4227B10AF00CCB4DF /* AppDelegate.m in Sources */,
+				1203A7C622BF522A004EF47D /* FullScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

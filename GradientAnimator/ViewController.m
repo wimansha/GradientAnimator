@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "GradientAnimatorView.h"
 #import "UIColor+Additions.h"
+#import "FullScreenViewController.h"
 
 @interface ViewController ()
 
@@ -34,6 +35,7 @@
                                                         [UIColor colorWithHexColorString:@"#905bd9"],
                                                         [UIColor colorWithHexColorString:@"#ff5be7"]
                                                         ]];
+    _gradientView.clipsToBounds = YES;
     [self.view addSubview:_gradientView];
     _gradientView.translatesAutoresizingMaskIntoConstraints = NO;
     
@@ -41,9 +43,26 @@
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_gradientView attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_gradientView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0]];
     
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_gradientView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0]];
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_gradientView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:1.0 constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_gradientView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:0.8 constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_gradientView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeHeight multiplier:0.3 constant:0]];
     
+    //
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    [button setTitle:@"On Full Screen" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(showOnFullScreen) forControlEvents:UIControlEventTouchUpInside];
+    button.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:button];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:button attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:_gradientView attribute:NSLayoutAttributeTop multiplier:1.0 constant:-20.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:button attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:button attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:1.0 constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:button attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:0.0 constant:30]];
+    
+    
+}
+
+-(void)showOnFullScreen{
+    [self presentViewController:[FullScreenViewController new] animated:YES completion:nil];
 }
 
 @end
