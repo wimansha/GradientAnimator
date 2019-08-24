@@ -23,7 +23,6 @@
     [super viewDidLoad];
     
     [self addGradView];
-    //[_gradientView startAnimation];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
