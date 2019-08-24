@@ -1,11 +1,7 @@
 # GradientAnimator
 A custom UIView with an ability to animate a linear gradient layer for a given set of colors.
 
-Here is just a small preview of GradientAnimator on an iPad
-
-![iPad Example](_GIFs/ipad_full_view.gif)
-
-# Example 
+![iPhone Example](_GIFs/iphone_example.gif)
 
 ```
 GradientAnimatorView *gradientView = [[GradientAnimatorView alloc] initWithColors:@[
@@ -15,4 +11,9 @@ GradientAnimatorView *gradientView = [[GradientAnimatorView alloc] initWithColor
                                                                         ]];
 ```
 
-![iPhone Example](_GIFs/iphone_example.gif)
+## Installation
+
+Just add `GradientAnimatorView` to your Podfile and install. Done!
+
+```ruby
+pod 'GradientAnimatorView'
