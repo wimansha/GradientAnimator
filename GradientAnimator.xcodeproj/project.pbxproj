@@ -61,6 +61,7 @@
 		1204F1C6227B10AF00CCB4DF = {
 			isa = PBXGroup;
 			children = (
+				1204F1E8227B29A700CCB4DF /* Lib */,
 				1204F1D1227B10AF00CCB4DF /* GradientAnimator */,
 				1204F1D0227B10AF00CCB4DF /* Products */,
 			);
@@ -78,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				1203A7C322BF51C3004EF47D /* Examples */,
-				1204F1E8227B29A700CCB4DF /* GradientAnimator */,
 				1204F1E9227B29D300CCB4DF /* Helper */,
 				1204F1D2227B10AF00CCB4DF /* AppDelegate.h */,
 				1204F1D3227B10AF00CCB4DF /* AppDelegate.m */,
@@ -94,13 +94,13 @@
 			path = GradientAnimator;
 			sourceTree = "<group>";
 		};
-		1204F1E8227B29A700CCB4DF /* GradientAnimator */ = {
+		1204F1E8227B29A700CCB4DF /* Lib */ = {
 			isa = PBXGroup;
 			children = (
 				1204F1EA227B2A0200CCB4DF /* GradientAnimatorView.h */,
 				1204F1EB227B2A0200CCB4DF /* GradientAnimatorView.m */,
 			);
-			path = GradientAnimator;
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		1204F1E9227B29D300CCB4DF /* Helper */ = {
