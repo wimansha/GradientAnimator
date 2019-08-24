@@ -9,6 +9,11 @@ GradientAnimatorView *gradientView = [[GradientAnimatorView alloc] initWithColor
                                                                           [UIColor greenColor],
                                                                           [UIColor blueColor]
                                                                         ]];
+                                                                        
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [gradientView startAnimation];
+}
 ```
 
 ## Installation
